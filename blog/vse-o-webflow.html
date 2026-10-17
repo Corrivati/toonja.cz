@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Co je Webflow a jak si v něm vytvořit web - Marek Toonja</title>
+  <meta name="description" content="Je to sranda. Zatímco tvořím tento web, píšu také článek o platformě, na které ho vyvíjím. Jde o můj v pořadí třetí web vytvořený pomocí Webflow. Cítím, že sebevědomí mi už dovolí něco sdělit světu. V tomto článku shrnu všechny dojmy, popíšu funkce a výhody oproti jiným řešením na trhu.">
+  <link rel="canonical" href="https://www.toonja.cz/blog/vse-o-webflow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Co je Webflow a jak si v něm vytvořit web - Marek Toonja">
+  <meta property="og:description" content="Je to sranda. Zatímco tvořím tento web, píšu také článek o platformě, na které ho vyvíjím. Jde o můj v pořadí třetí web vytvořený pomocí Webflow. Cítím, že sebevědomí mi už dovolí něco sdělit světu. V tomto článku shrnu všechny dojmy, popíšu funkce a výhody oproti jiným řešením na trhu.">
+  <meta property="og:url" content="https://www.toonja.cz/blog/vse-o-webflow">
+  <meta property="og:image" content="https://www.toonja.cz/assets/img/webflow_1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/img/favicon-toonja.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/napotoonja.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="/"><img src="/assets/img/logo-TOONJAmini.png" alt="Toonja – Marek Turnhöfer" width="140" height="40"></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+      <nav class="site-nav" aria-label="Hlavní navigace">
+        <ul>
+        <li><a href="/o-mne">Kdo je Mára</a></li>
+        <li><a href="/spoluprace">Spolupráce</a></li>
+        <li><a href="/blog/" aria-current="page">Blog</a></li>
+        <li><a href="/contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <article class="post">
+      <header class="wrap narrow post-head">
+        <p class="meta"><a class="tag" href="/blog-kategorie/development">Development</a> <time datetime="2023-12-23">23. 12. 2023</time> · Marek Turnhöfer</p>
+        <h1>Co je Webflow a jak si v něm vytvořit web</h1>
+        <p class="lead">Je to sranda. Zatímco tvořím tento web, píšu také článek o platformě, na které ho vyvíjím. Jde o můj v pořadí třetí web vytvořený pomocí Webflow. Cítím, že sebevědomí mi už dovolí něco sdělit světu. V tomto článku shrnu všechny dojmy, popíšu funkce a výhody oproti jiným řešením na trhu.</p>
+      </header>
+      <div class="wrap">
+        <img class="post-hero" src="/assets/img/webflow_1.jpg" alt="" width="1600" height="794">
+      </div>
+      <div class="wrap narrow prose">
+          <h2>Co je to Webflow</h2>
+          <p>Jde o tzv. no-code řešení vývoje webu. Tahle definice nelže, přesto se najdou nějaká ale. Pravděpodobně byste očekávali, že si web snadno vytvoříte sami i bez znalosti kódování a bude vypadá tak, jak si představujete. Ale takhle to úplně nefunguje. </p>
+          <p>Webflow nabízí přehledné uživatelské rozhraní editoru pro tvorbu webu. V něm však najdete podobnou logiku a atributy využívané vývojářem. Není to drag-n-drop editor, který znáte z Wordpressů nebo mailingových nástrojů. Nevíte, co znamená &lt;div&gt; a “class”? Tak to si při tvorbě webu od píky ani neškrtnete. Pokud jste ale dávali na hodinách informatiky pozor, máte šanci se chytit!</p>
+          <h3>Naštěstí je tu více než 2000 šablon</h3>
+          <p>Právě díky obří <a href="https://webflow.com/templates">knihovně templatů</a> může být tvorba vlastního webu nejen dostupná, ale také rychlá. Nemáte-li základní kodérské znalosti, musíte se spokojit s tím, co daná šablona nabízí. Díky přehlednému (trochu mi připomíná Photoshop) rozhraní alespoň brzy pochopíte, jak co smazat nebo přebarvit.</p>
+          <p>Myslete jen na to, že většina šablon bude něco stát. Ceny se pohybují od 19 do 129 dolarů. Pár šablon je tu zdarma, ale nejde zrovna o žádný zázraky. Jedna rada ode mne - Když už do Webflow jdete, investujte do takové šablony, která co nejlépe splní váš byznysový cíl.</p>
+          <h3>Vlastní CMS</h3>
+          <p>Nespornou výhodou Webflow je vlastní Content Management System (CMS). Například pro blog si můžete (ale nemusíte) vytvořit následující kolekce:</p>
+          <ul>
+          <li>kategorie článku</li>
+          <li>články</li>
+          <li>tagy</li>
+          <li>autoři</li></ul>
+          <p>Nebo cokoliv dalšího. A vše mezi sebou a se stránkami krásně provázat. Pokud si koupíte šablonu, tohle už možná bude vyřešené a na vás bude jen brnkačka v podobě přidávání nových článků. Všechny CMS kolekce můžete připojit na vytvořený design a dynamicky z nich propisovat data dle vlastních pravidel. Umí to fakt hodně.</p>
+          <h3>Kdo a proč by měl používat Webflow</h3>
+          <p>Není potřeba se moc rozepisovat, vše shrnu přehledně do odrážek.</p>
+          <h4>Pro koho je Webflow skvělým nástrojem</h4>
+          <ul>
+          <li><strong>Pro firmy a freelancery</strong>, které chtějí vybudovat profesionální prezentaci, dále stránky rozvíjet a mít dobré výsledky v organickém vyhledávání</li>
+          <li><strong>Vývoj webu pro vašeho klienta.</strong> Na trhu najdete spousty firem, které nabízí vývoj webů na Wordpressu. Tak proč nevyvíjet také ve Webflow, které je v mnohém lepší.</li>
+          <li>Jako <strong>nástroj marketingového oddělení</strong> pro rychlou tvorbu landing pages nebo odděleného blogu. Vše si snadno naklikáte bez nutnosti vývojáře.</li></ul>
+          <h4>Kdo by měl hledat jinde</h4>
+          <ul>
+          <li><strong>Malé projekty se statickým obsahem</strong>. Pokud chcete vytvořit stránky pro svou lokální kavárnu nebo restauraci, není Webflow to pravé pro vás. Na trhu najdete přístupnější řešení, kde web postavíte daleko rychleji. A levněji.</li>
+          <li><strong>Eshopy.</strong> Ač má Webflow e-commerce modul, není ještě tak vymazlený jako zbytek funkcí. Potvrzeno vlastními zkušenostmi včetně názorů jiných marketérů v diskuzních fórech. V Česku raději sáhněte po Shoptetu, v zahraničí po Shopify.</li></ul>
+          <h2>Jak Webflow funguje?</h2>
+          <p>Zpočátku to možná vyznělo, že Webflow umí být příliš komplikovaný. Při samotné tvorbě stránek ano. Ale vše ostatní je hračka především díky přehlednému UI a přímočarému postupu. Kdo někdy pracoval s nástroji od Adobe, určitě si rychle zvykne.</p>
+          <h3>První kroky, když tvoříte web</h3>
+          <p>Postup je poměrně přímočarý a Webflow vás celou dobu vede za ručičku:</p>
+          <ol>
+          <li>Vytvoříte si svůj uživatelský účet </li>
+          <li>Následuje založení vlastního Workspace, pracovní plochy, kde budete vytvářet své projekty</li>
+          <li>Kliknete na vytvoření nové stránky. V rámci bezplatného Workspace můžete mít maximálně 2 nehostované projekty.</li>
+          <li>Založení stránky začíná výběrem šablony. Můžete si vybrat některou zdarma nějakou základní, pracovat na čistém projektu nebo si šablonu koupit. </li>
+          <li>Můžete začít tvořit. Pokud však tvoříte stránky bez šablony, budete limitováni počtem 2 stránek na projekt. Využijete-li šablonu, naimportuje se více stránek, které můžete upravovat. </li>
+          <li>Stránky můžete libovolně publikovat na nazev-projektu.webflow.io a testovat tak všechny úpravy.</li>
+          <li>Jakmile budete mít hotovo a budete chtít stránku vypustit ven, koupíte si tzv. Site plan a nasadíte ji na vlastní doménu.</li></ol>
+          <h2>Webflow versus Wordpress</h2>
+          <p>Než se rozepíšu, tak bude dobré si vše shrnout v přehledné tabulce.</p>
+          <p>Ohledně srovnání mezi Wordpressem a Webflow se nabízí přirovnání mezi starým Androidem a iOS. Na jedné straně máte otevřený systém, kde se dá dělat naprosto vše. Na straně druhé uzavřenější a dražší systém, který však nabízí stabilitu a bezpečnost. Co z toho je lepší?</p>
+          <p>Ok, možná trochu přeháním a právě ty rozdíly se dost smývají, když do toho přidáme další proměnné. Wordpress může být bezpečný, ale bude vás to stát čas a nejspíš i další peníze. Stejně jako Webflow zvládne cokoliv, jen na to nemá pluginy, které by to všechno usnadnily. </p>
+          <p>Z tabulky je však patrné, že Webflow má ve většině disciplín navrh. Ztrácí pouze v možnostech vlastních úprav nebo v integraci třetích stran. To je však dáno právě tou absencí pluginů, které umožní mít vše na tři kliky hotový. Ve Webflow si to musíte odmakat. <strong>Odměnou za vyšší cenovku a práci vám bude bezpečný, stabilní web, který si vyhledávače zamilují</strong>.  </p>
+          <h2>Kolik zaplatíte za Webflow</h2>
+          <p>Za Webflow se platí hned dvakrát. To však neznamená, že musíte.</p>
+          <h3>Poplatek za Workspace</h3>
+          <p>Vytvořením účtu automatická vzniká Workspace s účtem zdarma. Ten má své limity, tím nejzásadnějším je však počet uživatelů. Upgrade se vyplatí v těchto případech:</p>
+          <ul>
+          <li>Na projektech bude pracovat více uživatelů a potřebujete jim nastavit různé role a přístupy</li>
+          <li>Potřebujete větší počet vyvíjených projektů na webflow.io stage</li>
+          <li>Chcete do projektu pozvat externího freelancera nebo agenturu</li></ul>
+          <p>Nic z toho není váš případ? Pak vám bude stačit Free plán.</p>
+          <figure><img src="/assets/img/webflow-screen-2.png" alt="" loading="lazy"><figcaption>Ceník pro váš pracovní prostor (Workspace)</figcaption></figure>
+          <h3>Poplatek za web</h3>
+          <p>A pak je tady ceník za stránky, který už platit musíte. Bez placení totiž nemůžete stránku provozovat na vlastní doméně. Každý plán má své jasné určení:</p>
+          <ul>
+          <li><strong>Free</strong> - hodí se, když tvoříte první verzi webu před jeho publikací</li>
+          <li><strong>Basic</strong> - má smysl pouze pro malé statické stránky, nepodporuje CMS </li>
+          <li><strong>CMS</strong> - tenhle tarif už umí všechno co můžete potřebovat. Pozor však na limity.</li>
+          <li><strong>Business</strong> - pokud rovozujete web s velkým provozem, tohle bude ten správný plán</li></ul>
+          <figure><img src="/assets/img/webflow-screen-1.png" alt="" loading="lazy"><figcaption>Webflow ceník pro provoz webu</figcaption></figure>
+          <p>Webflow nabízí také speciální ceník pro E-commerce. Ale jak jsem již zmínil, pro e-shopy doporučuji hledat jiná řešení.</p>
+          <h2>Vyplatí se?</h2>
+          <p>Jednoznačně ano. Pokud dokážete vytěžit alespoň část toho, co Webflow umí, nemůžete prodělat. Stavím na něm tento web jako třetí v řadě. A určitě není poslední. </p>
+          <p>Prostě si Webflow zdarma sami vyzkoušejte.</p>
+          <p>PS. Posílám velké poděkování <a href="https://www.simonjun.cz/">Šimonovi</a> za to, že mi Webflow ukázal.</p>
+      </div>
+      <aside class="wrap narrow author">
+        <img src="/assets/img/foto-toonja.jpg" alt="" width="72" height="72" loading="lazy">
+        <div>
+          <p><strong>Marek Turnhöfer</strong> – online marketingový konzultant a PPC specialista.</p>
+          <p><a href="/contact">Chcete probrat váš projekt? Napište mi.</a></p>
+        </div>
+      </aside>
+    </article>
+
+    <section class="section alt">
+      <div class="wrap">
+        <h2>Další články</h2>
+        <div class="grid-3">
+        <article class="post-card">
+          <a href="/blog/seo-copywriting">
+            <img src="/assets/img/blogpost_seo_2.jpg" alt="" loading="lazy" width="1204" height="848">
+          </a>
+          <div class="post-card-body">
+            <p class="meta"><a class="tag" href="/blog-kategorie/seo">SEO</a> <time datetime="2023-12-23">23. 12. 2023</time></p>
+            <h3><a href="/blog/seo-copywriting">SEO Copywriting: jak psát články pro vyhledávače</a></h3>
+            <p>Největší výzvou každého copywritera a content markeťáka je napsat článek, který budou vyhledávače milovat. Možná máte pocit, že psát text pro googlebota a člověka je velký rozdíl. No, jenže on není.</p>
+            <a class="more" href="/blog/seo-copywriting">Přečíst článek →</a>
+          </div>
+        </article>
+        <article class="post-card">
+          <a href="/blog/jak-psat-meta-description">
+            <img src="/assets/img/meta_1.jpg" alt="" loading="lazy" width="1204" height="848">
+          </a>
+          <div class="post-card-body">
+            <p class="meta"><a class="tag" href="/blog-kategorie/seo">SEO</a> <time datetime="2023-12-23">23. 12. 2023</time></p>
+            <h3><a href="/blog/jak-psat-meta-description">Jak psát meta description, které funguje</a></h3>
+            <p>Pokud to s organickým vyhledáváním myslíte vážně, meta description budou jednou z vašich největších zbraní. Ale jen v případě, že jsou napsaná správně. Jejich správné otextování doslova láká k prokliku.</p>
+            <a class="more" href="/blog/jak-psat-meta-description">Přečíst článek →</a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="/"><img src="/assets/img/logo-TOONJAmini.png" alt="Toonja" width="140" height="40"></a>
+        <p>Online marketing pro e-shopy a start-upy.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Mapa stránek</h2>
+        <ul>
+          <li><a href="/o-mne">Kdo je Mára</a></li>
+          <li><a href="/spoluprace">Spolupráce</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Blog</h2>
+        <ul>
+          <li><a href="/blog-kategorie/development">Development</a></li>
+          <li><a href="/blog-kategorie/content">Content</a></li>
+          <li><a href="/blog-kategorie/seo">SEO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Sledujte mě</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/marek-turnhofer/" rel="me">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/marektoonja/" rel="me">Instagram</a></li>
+          <li><a href="https://www.facebook.com/marektoonja" rel="me">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© 2021–2026 Marek Turnhöfer</p>
+    </div>
+  </footer>
+</body>
+</html>
