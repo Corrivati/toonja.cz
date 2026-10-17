@@ -1,0 +1,47 @@
+/* Keeps headings that were re-tagged for SEO looking exactly as before.
+   Loaded BEFORE the Webflow stylesheet so template classes still win. */
+
+.seo-sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.seo-from-h2{margin-bottom: 10px;
+  font-weight: bold;}
+.seo-from-h3{margin-bottom: 10px;
+  font-weight: bold;}
+.seo-from-h4{margin-bottom: 10px;
+  font-weight: bold;}
+.seo-from-h2{margin-top: 20px;
+  font-size: 32px;
+  line-height: 36px;}
+.seo-from-h3{margin-top: 20px;
+  font-size: 24px;
+  line-height: 30px;}
+.seo-from-h4{margin-top: 10px;
+  font-size: 18px;
+  line-height: 24px;}
+.seo-from-h2{color: var(--neutral--800);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25em;}
+.seo-from-h3{color: var(--neutral--800);
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.417em;}
+.seo-from-h4{color: var(--neutral--800);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.364em;}
+@media screen and (max-width: 991px){
+  .seo-from-h2{font-size: 30px;}
+}
+@media screen and (max-width: 767px){
+  .seo-from-h2{margin-bottom: 12px;
+    font-size: 26px;}
+  .seo-from-h3{font-size: 22px;}
+  .seo-from-h4{font-size: 20px;}
+}
