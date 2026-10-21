@@ -45,3 +45,10 @@
   .seo-from-h3{font-size: 22px;}
   .seo-from-h4{font-size: 20px;}
 }
+
+/* Tables in blog articles */
+.rich-text .table-scroll{overflow-x:auto;margin:24px 0 32px}
+.rich-text table{width:100%;min-width:560px;border-collapse:collapse;font-size:16px;line-height:1.5em}
+.rich-text th,.rich-text td{border:1px solid var(--neutral--300);padding:10px 14px;text-align:left;vertical-align:top}
+.rich-text th{background:var(--neutral--200);color:var(--neutral--800);font-weight:700}
+.rich-text code{background:var(--neutral--300);padding:1px 6px;border-radius:4px;font-size:.9em}
