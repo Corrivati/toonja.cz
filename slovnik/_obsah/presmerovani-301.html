@@ -1,0 +1,51 @@
+<!--
+meta:
+title: Přesměrování 301: co to je a kdy ho použít | Toonja
+description: Přesměrování 301 trvale posílá starou adresu na novou. Kdy ho nastavit, jak se liší od 302 a co dělat, aby stěhování webu nestálo pozice ve vyhledávání.
+h1: Co je přesměrování 301
+perex: Cedule „přestěhovali jsme se“ pro lidi i vyhledávače. Bez ní přijdete při změně adres o návštěvnost i roky budované pozice.
+aktualizovano: 2026-10-22
+souvisejici: seo, interni-prolinkovani, zpetny-odkaz, staticky-web
+faq:
+- Jaký je rozdíl mezi 301 a 302? | 301 je trvalé přesměrování, 302 dočasné. Při změně adresy, která má platit natrvalo, použijte 301 (nebo 308). Dočasné přesměrování se hodí třeba při krátké údržbě.
+- Jak dlouho přesměrování nechat? | Google doporučuje aspoň rok, ideálně déle. Staré odkazy z jiných webů ale fungují jen tak dlouho, dokud přesměrování existuje, takže ho nerušte bez důvodu.
+- Musím přesměrovat úplně všechno? | Ne. Stránky, které nikdo nenavštěvoval a nikdo na ně neodkazuje, můžete nechat skončit chybou 404. Hlídejte hlavně stránky s návštěvností a odkazy.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>Přesměrování 301 je trvalé přesměrování staré adresy stránky na novou.</strong> Server prohlížeči i vyhledávači řekne, že se stránka natrvalo přestěhovala. Návštěvník skončí na správném místě a vyhledávač na novou adresu převede signály staré, včetně síly odkazů. Je to základ každého stěhování webu.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">Přesměrování jednoduše</h2>
+<p>Měníte adresu stránky, doménu nebo celý systém webu. Staré adresy ale žijí dál: v záložkách lidí, v odkazech z jiných webů i ve výsledcích Googlu. <strong>Bez přesměrování všechny skončí na chybové stránce.</strong></p>
+<p>Číslo 301 je stavový kód HTTP. Znamená „přesunuto natrvalo“. Jeho sourozenec 302 říká „dočasně jinde“.</p>
+
+<h2 id="jak-funguje">Jak to funguje</h2>
+<ol>
+<li>Prohlížeč nebo robot si vyžádá starou adresu.</li>
+<li>Server odpoví kódem 301 a novou adresou.</li>
+<li>Prohlížeč rovnou načte novou stránku. Vyhledávač si změnu zapamatuje a časem ve výsledcích nahradí starou adresu novou.</li>
+</ol>
+<p>Podle dokumentace Googlu trvalé přesměrování neubírá stránce sílu odkazů. Doporučuje ho nechat aspoň rok a posílat staré adresy rovnou na cíl, ne přes řetěz několika přesměrování (<a href="https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes" rel="noopener" target="_blank">Google Search Central</a>).</p>
+
+<h2 id="priklad">Příklad: stěhování toonja.cz</h2>
+<p>Při převodu tohoto webu z Webflow se ukázalo, že <strong>ze 26 adres v sitemapě žilo jen asi 8.</strong> Zbytek byly ukázkové kurzy a košík ze šablony, které nikdo nehledal.</p>
+<p>Skutečné stránky si zachovaly stejné adresy, takže přesměrování nepotřebovaly. Pozůstatky šablony teď vracejí chybu 404 a vyhledávač je postupně zapomene. Zajímavost: GitHub Pages, kde web běží, serverové přesměrování neumí. Kdyby bylo potřeba, řešil by se přes hosting jako Cloudflare. Víc v článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a>.</p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Nepřesměrovávejte všechno na úvodní stránku.</strong> Google takové přesměrování obvykle bere jako takzvanou soft 404, tedy jako by stránka neexistovala. Každá stará adresa patří na nejbližší novou.</li>
+<li><strong>Opravte i interní odkazy.</strong> Proč posílat návštěvníky přes přesměrování, když můžou jít rovnou.</li>
+<li><strong>Po stěhování sledujte Search Console.</strong> Chyby 404 a pokles návštěvnosti ukážou, co jste zapomněli.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Tabulku přesměrování dělejte dřív než nový web. Pak už na ni při spuštění nebude čas.</p>
+  </div>
+</div>

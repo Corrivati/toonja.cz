@@ -13,11 +13,11 @@ Texty píšu za Máru jako osobní značku: kamarádský odborník, výsledek pr
 
 ### Šablona pojmu
 1. **Krátká odpověď** (`.slovnik-definice`): 40 až 60 slov, první věta je definice „X je…“. Tohle čte Google i AI.
-2. 2 až 4 sekce H2 s `id`: jednoduše / jak to funguje / z praxe (Márův vlastní příklad, povinně) / na co si dát pozor.
+2. 2 až 4 sekce H2 s `id`: jednoduše / jak to funguje / příklad / na co si dát pozor. Příklad je povinný: vlastní zkušenost (jen pokud ji Mára potvrdil), postřeh z webu toonja.cz, nebo obecný ověřitelný příklad. Data z internetu jen s odkazem na zdroj. Zkušenosti si nevymýšlet, klienty nejmenovat bez souhlasu.
 3. Box „Mára říká“: jeden osobní postřeh, ne hláška z playbooku.
 4. 2 až 3 otázky FAQ v meta.
-5. Odkazy: aspoň 1 článek blogu, 2 až 4 související pojmy, CTA na spolupráci nebo kontakt.
-6. Rozsah 300 až 700 slov. Pod 300 slov a bez vlastní zkušenosti pojem nepublikovat.
+5. Odkazy: aspoň 1 článek blogu (pokud k tématu žádný není, odkaz na Spolupráci a zapsat téma jako nápad na článek), 2 až 4 související pojmy, CTA na spolupráci nebo kontakt.
+6. Rozsah 300 až 700 slov. Pod 300 slov a bez konkrétního příkladu pojem nepublikovat.
 7. SEO: title do 60 znaků „Pojem: co to je a …“, description 140 až 155 znaků, H1 „Co je …“.
 8. Nikdy nekopírovat text z cizích slovníků. Inspirace ano, formulace vlastní.
 
