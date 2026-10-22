@@ -48,3 +48,7 @@ Pak otevřete http://localhost:8000.
 - „Powered by Webflow“.
 
 Opraveno: odkazy v patičce, české texty místo anglických v boxech článků („O autorovi“, „Odebírejte novinky“, „Nejnovější články“), titulky a popisy stránek kategorií.
+
+## Slovník pojmů
+
+Rozcestník `/slovnik/` a stránky pojmů `/slovnik/<slug>`. Data v `slovnik/pojmy.json`, texty v `slovnik/_obsah/`, stránky generuje `python3 tools/slovnik.py build`. Kontrola prolinkování článků: `python3 tools/slovnik.py check`. Pravidla v `CLAUDE.md`.

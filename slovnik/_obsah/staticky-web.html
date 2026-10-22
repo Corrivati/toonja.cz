@@ -1,0 +1,52 @@
+<!--
+meta:
+title: Statický web: co to je a kdy se vyplatí | Toonja
+description: Statický web je web z hotových HTML souborů bez databáze. Proč je rychlý, levný a bezpečný, kdy se hodí a kdy sáhnout po CMS. S příkladem z praxe.
+h1: Co je statický web
+perex: Web bez databáze a administrace. Zní to jako krok zpátky, ale pro většinu malých webů je to dnes ta nejchytřejší volba.
+aktualizovano: 2026-10-22
+souvisejici: git, cms, headless-cms, mcp
+faq:
+- Je statický web horší pro SEO? | Ne. Rychlé načítání a čisté HTML vyhledávače ocení. O pozicích rozhoduje hlavně obsah, ne to, jestli za webem běží databáze.
+- Můžu mít na statickém webu blog? | Ano. Každý článek je samostatná stránka. Blog na toonja.cz funguje přesně takhle.
+- Kolik stojí provoz? | U malého webu většinou jen doména. Hosting statických souborů je na GitHub Pages nebo Cloudflare zdarma.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>Statický web je web složený z hotových HTML souborů, které server jen pošle návštěvníkovi.</strong> Při návštěvě se nic nepočítá a nepotřebuje databázi ani administraci. Díky tomu se načítá rychle, hosting bývá zdarma a útočník nemá kudy se dostat dovnitř, protože žádná administrace prostě neexistuje.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">Statický a dynamický web jednoduše</h2>
+<p>Představte si bistro. <strong>Dynamický web vaří každé jídlo na objednávku:</strong> při každé návštěvě poskládá stránku z databáze, šablony a pluginů. Tak funguje třeba WordPress.</p>
+<p><strong>Statický web má jídlo připravené předem.</strong> Stránka je hotová a jen se vydá. Rychleji, levněji a bez kuchaře, kterého je potřeba hlídat.</p>
+<p>Statický neznamená neměnný. Obsah upravujete jako jinde, jen se změna připraví dopředu a pak se nahraje celá hotová stránka.</p>
+
+<h2 id="jak-vznika">Jak statický web vzniká</h2>
+<ol>
+<li><strong>Ručně psané HTML.</strong> Nejjednodušší cesta. Hodí se pro menší weby, hlavně když vám s úpravami pomáhá AI.</li>
+<li><strong>Generátor statických stránek.</strong> Texty píšete v Markdownu, nástroj jako Astro, Hugo nebo Eleventy z nich postaví hotové stránky.</li>
+<li><strong>Hosting.</strong> Soubory nahrajete na GitHub Pages, Cloudflare nebo Netlify. Napojené na <a href="git">Git</a> se publikují samy po každé změně.</li>
+</ol>
+
+<h2 id="z-praxe">Z praxe: toonja.cz</h2>
+<p>Tenhle web je statický. Obyčejné HTML soubory na GitHub Pages, žádný build, žádná databáze. Když jsem ho převáděl z Webflow, zjistil jsem, že ze 26 adres v sitemapě bylo skutečných jen asi 8. Zbytek byly pozůstatky šablony.</p>
+<p>Co statický web sám neumí, řeší externí služba. <strong>Formuláře mi posílá FormSubmit,</strong> stránky slovníku generuje malý skript. Výsledek jsou ale zase obyčejné HTML soubory. Celý příběh přestavby najdete v článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a>.</p>
+
+<h2 id="kdy-ne">Kdy se statický web nehodí</h2>
+<ul>
+<li><strong>E-shop.</strong> Košík, platby a sklad potřebují server. Tady sáhněte po Shopify.</li>
+<li><strong>Přihlašování a členské sekce.</strong> Bez služby třetí strany to nepůjde.</li>
+<li><strong>Redakce, která publikuje denně.</strong> Pokud web upravuje víc netechnických lidí, zvažte <a href="headless-cms">headless CMS</a>. Obsah zůstane statický, ale editor bude mít administraci.</li>
+<li><strong>Vyhledávání a formuláře</strong> zvládnete, jen přes externí službu nebo skript v prohlížeči.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Statický web je jako vytištěná kniha. WordPress je spíš tamagoči: týden se o něj nestaráte a něco umře.</p>
+  </div>
+</div>
