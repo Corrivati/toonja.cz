@@ -284,7 +284,14 @@ def build_term(p, kat, pojmy, by_slug):
         toc.append(("faq", "Časté otázky"))
     toc_html = "".join(f'<li><a href="#{i}">{esc(t)}</a></li>' for i, t in toc)
 
-    rel = [by_slug[s.strip()] for s in meta.get("souvisejici", "").split(",") if s.strip() in by_slug]
+    def live(x):
+        return x["stav"] in ("hotovo", "clanek") or (INCLUDE_DRAFT and x["priorita"] == 1)
+    rel = [by_slug[s.strip()] for s in meta.get("souvisejici", "").split(",") if s.strip() in by_slug and live(by_slug[s.strip()])]
+    # odkazy v textu na pojmy bez stránky převést na prostý text
+    def unlink(m):
+        t = by_slug.get(m.group(1))
+        return m.group(0) if (t is None or live(t)) else m.group(2)
+    content = re.sub(r'<a href="([a-z0-9-]+)">(.*?)</a>', unlink, content)
     rel_html = "".join(f'<a class="slovnik-rel" href="{esc(term_href(r))}">{esc(r["pojem"])}</a>' for r in rel)
 
     art = article_info(p["clanky"][0]) if p.get("clanky") else None

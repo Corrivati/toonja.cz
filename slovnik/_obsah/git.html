@@ -1,0 +1,55 @@
+<!--
+meta:
+title: Git: co to je a proč na něm stavět i web | Toonja
+description: Git je systém, který si pamatuje každou změnu v souborech. Co to je, jak se liší od GitHubu a proč v něm mám web, i když nejsem programátor.
+h1: Co je Git
+perex: Systém, který si pamatuje každou změnu. Programátoři bez něj nedají ránu, ale hodí se i markeťákovi, který chce mít web pod kontrolou.
+aktualizovano: 2026-10-22
+souvisejici: mcp, staticky-web, cms
+faq:
+- Je Git totéž co GitHub? | Ne. Git je nástroj na správu verzí, GitHub je služba, kde repozitáře s Gitem žijí online a kde na nich spolupracujete. Podobně fungují GitLab nebo Bitbucket.
+- Musím umět příkazovou řádku? | Dnes už ne. Základy zvládnete v aplikaci GitHub Desktop, přímo na GitHubu v prohlížeči, nebo vám commity udělá AI asistent.
+- Je Git zdarma? | Ano, Git je open source. GitHub má pro malé projekty bezplatný tarif včetně soukromých repozitářů.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>Git je systém pro správu verzí. Pamatuje si každou změnu v souborech projektu: kdo ji udělal, kdy a proč.</strong> Když se něco pokazí, vrátíte se k fungující verzi jedním krokem. Vytvořil ho Linus Torvalds v roce 2005 pro vývoj Linuxu a dnes na něm stojí většina softwaru na světě.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">Git jednoduše: tlačítko Zpět pro celý projekt</h2>
+<p>Znáte soubor <code>web_final_v3_TED_UZ_OPRAVDU.html</code>? Tak přesně tohle Git řeší.</p>
+<p><strong>Místo kopií souborů ukládáte stavy projektu.</strong> Každý uložený stav má krátký popis, třeba „oprava odkazu v patičce“. Kdykoli se k němu můžete vrátit, porovnat ho s dneškem nebo zjistit, kdo co změnil. Nic se neztratí.</p>
+
+<h2 id="jak-funguje">Jak Git funguje</h2>
+<p>Stačí znát čtyři slova:</p>
+<ol>
+<li><strong>Repozitář.</strong> Složka projektu, kterou Git hlídá. Na GitHubu ji máte i online.</li>
+<li><strong>Commit.</strong> Uložený stav s popisem. Fotka projektu v jednom okamžiku.</li>
+<li><strong>Větev.</strong> Paralelní verze projektu. Novinku zkoušíte bokem a hlavní verze mezitím běží dál.</li>
+<li><strong>Push.</strong> Odeslání commitů z počítače na GitHub. Teprve pak je vidí ostatní a hosting.</li>
+</ol>
+<p>Když je větev hotová, sloučíte ji s hlavní verzí. U webu to často znamená, že se změna rovnou publikuje.</p>
+
+<h2 id="z-praxe">Z praxe: web v Gitu</h2>
+<p>Když jsem stěhoval toonja.cz z Webflow, celý web skončil v Git repozitáři na GitHubu. Každá úprava textu má svůj commit a já vidím historii webu řádek po řádku.</p>
+<p><strong>Tenhle slovník vznikal v samostatné větvi.</strong> Živý web o něm nevěděl, dokud jsem neschválil design. Kdyby se mi nelíbil, větev prostě zahodím a nikdo nic nepozná.</p>
+<p>Git je taky důvod, proč může web upravovat AI. Přes <a href="mcp">MCP</a> do repozitáře sáhne, udělá commit a já ho před zveřejněním zkontroluju. Víc v článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a>.</p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Hesla a klíče do Gitu nepatří.</strong> Co jednou commitnete, zůstane v historii, i když to později smažete.</li>
+<li><strong>Bez pushe to není záloha.</strong> Repozitář jen ve vašem počítači odejde spolu s diskem.</li>
+<li><strong>Pište srozumitelné popisy commitů.</strong> „Úpravy“ vám za půl roku nic neřekne. „Nový termín workshopu v prosinci“ ano.</li>
+<li><strong>Velká videa radši jinam.</strong> Git je stavěný na text a menší obrázky.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Git mi nejvíc změnil nervy. Když vím, že se ke všemu vrátím, zkouším na webu odvážnější věci.</p>
+  </div>
+</div>

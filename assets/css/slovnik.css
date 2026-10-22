@@ -123,6 +123,7 @@ a.slovnik-az__link:hover{background:var(--secondary--color-5);color:var(--accent
   .slovnik-cta{flex-direction:column;align-items:flex-start;padding:40px}
 }
 @media screen and (max-width:767px){
+  .slovnik-hero .bg-dot{display:none}
   .slovnik-hero{padding-bottom:56px}
   .slovnik-groups{column-count:1}
   .slovnik-group__letter{font-size:32px}
