@@ -1,0 +1,54 @@
+<!--
+meta:
+title: MCP (Model Context Protocol): co to je a jak funguje | Toonja
+description: MCP je otevřený standard, přes který se AI jako Claude nebo ChatGPT napojí na vaše nástroje a data. Jak funguje, k čemu je a na co si dát pozor.
+h1: Co je MCP (Model Context Protocol)
+perex: Zásuvka, přes kterou AI asistent sahá do vašich nástrojů. Vysvětlím, jak funguje a proč díky ní spravuju web jednou větou.
+aktualizovano: 2026-10-22
+souvisejici: git, staticky-web, cms, headless-cms
+faq:
+- Musím umět programovat, abych MCP používal? | Ne. V aplikacích jako Claude nebo ChatGPT připojíte hotový konektor pár kliknutími. Programovat potřebujete, jen když si chcete postavit vlastní MCP server.
+- Jaký je rozdíl mezi MCP a API? | API je rozhraní jedné konkrétní služby. MCP je společný jazyk, přes který AI mluví s libovolným nástrojem, který ho podporuje. Často je MCP server postavený právě nad API dané služby.
+- Kdo MCP vytvořil? | Standard představil Anthropic (firma za Claudem) v listopadu 2024 jako otevřený projekt. Dnes ho podporuje i ChatGPT, Cursor, VS Code a další nástroje.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>MCP (Model Context Protocol) je otevřený standard, přes který se AI asistent napojí na nástroje a data mimo chat.</strong> Třeba na Git repozitář, kalendář, e-shop nebo složku se soubory. AI pak nemusí čekat, až jí něco zkopírujete. Sama si informace přečte a na váš pokyn udělá změnu.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">MCP jednoduše: jedna zásuvka pro všechno</h2>
+<p>Pamatujete na šuplík plný nabíječek, kde každý telefon chtěl jinou? Přesně tak to bylo s AI. Každé propojení chatbota s jiným nástrojem se stavělo zvlášť.</p>
+<p><strong>MCP z toho dělá jednu standardní zásuvku.</strong> Nástroj ji jednou podporuje a připojí se k němu Claude, ChatGPT i editor kódu. Vy jen řeknete, co chcete udělat.</p>
+
+<h2 id="jak-funguje">Jak MCP funguje</h2>
+<p>Ve hře jsou vždycky tři strany:</p>
+<ol>
+<li><strong>AI aplikace.</strong> Claude, ChatGPT, Cursor. Tady zadáváte práci.</li>
+<li><strong>MCP server.</strong> Prostředník, který AI ukáže, co v nástroji smí dělat: číst soubory, vytvořit událost v kalendáři, upravit text na webu.</li>
+<li><strong>Váš nástroj nebo data.</strong> GitHub, Google Disk, Shopify, databáze.</li>
+</ol>
+<p>Server nabízí AI tři věci: <strong>nástroje</strong> (akce, které může provést), <strong>zdroje</strong> (data, která může číst) a <strong>připravené postupy</strong>. Co AI uvidí a co smí měnit, určujete vy při připojení.</p>
+
+<h2 id="z-praxe">Z praxe: web, který upravuju jednou větou</h2>
+<p>Tenhle web je obyčejná složka souborů v <a href="git">Git</a> repozitáři. Claude se k ní připojí přes MCP. Napíšu „oprav v patičce odkaz na Spolupráci a přidej ho na všechny stránky“ a za minutu mám hotovou změnu, kterou si před zveřejněním zkontroluju.</p>
+<p>Kamarád Radek si stejně spravuje svůj web přes ChatGPT. Bez administrace, bez pluginů. Celý příběh je v článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a>.</p>
+<p>A nejde jen o weby. Přes MCP se dá napojit kalendář, e-mail, analytika nebo e-shop. <strong>Kdekoli dnes kopírujete data do chatu, MCP vám nejspíš ušetří práci.</strong></p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Dávejte jen nutná práva.</strong> AI potřebuje jeden repozitář, ne celý účet.</li>
+<li><strong>Kontrolujte, co AI mění.</strong> Je rychlá a snaživá. Občas až moc.</li>
+<li><strong>Připojujte jen důvěryhodné servery.</strong> Oficiální konektory od výrobce nástroje mají přednost před neznámými projekty z internetu.</li>
+<li><strong>Citlivá data hlídejte.</strong> Co AI přes MCP přečte, s tím pracuje. Hesla a čísla karet do toho netahejte.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>MCP je pro AI to, co byl pro mě první mobil s internetem. Najednou to není hračka na povídání, ale kolega, který může něco doopravdy udělat.</p>
+  </div>
+</div>
