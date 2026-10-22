@@ -30,7 +30,7 @@ Před odevzdáním každého článku:
 2. Spusť `check --vse` a podívej se, které pojmy ve stavu `navrh` článek používá. Pokud je pojem v článku klíčový, navrhni Márovi jeho napsání (přidej mu prioritu v `pojmy.json`).
 3. Nový pojem, který v článku vysvětluješ a ve slovníku chybí: přidej ho do `pojmy.json` jako `navrh` a zmiň to v shrnutí.
 4. Obráceně: u pojmů, které článek rozebírá do hloubky, přidej článek do pole `clanky` v `pojmy.json`, ať na něj stránka pojmu odkazuje.
-5. Klíčová slova článku nesmí kanibalizovat pojem: slovník cílí na „co je X“, článek na „jak X“ a návody. Když článek vlastní definici (SEO copywriting, Webflow), pojem má stav `clanek` a rozcestník vede rovnou na článek.
+5. Klíčová slova článku nesmí kanibalizovat pojem: slovník cílí na „co je X“, článek na „jak X“ a návody. Pojem, na který míří článek blogu (SEO copywriting, Webflow), do slovníku nedáváme vůbec.
 
 ## Před publikací
 - Náhled: `python3 serve.py`, zkontrolovat desktop i mobil.

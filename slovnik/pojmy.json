@@ -1,5 +1,5 @@
 {
-  "_info": "Registr pojmů slovníku. Zdroj pro rozcestník (tools/slovnik.py build) i kontrolu prolinkování článků (tools/slovnik.py check). stav: hotovo = stránka existuje, navrh = zatím jen v plánu, clanek = pojem vede rovnou na článek blogu. tvary = skloňované tvary, podle kterých skript hledá výskyty v článcích.",
+  "_info": "Registr pojmů slovníku. Zdroj pro rozcestník (tools/slovnik.py build) i kontrolu prolinkování článků (tools/slovnik.py check). stav: hotovo = stránka existuje, navrh = zatím jen v plánu. Pojmy, které pokrývá článek blogu, do slovníku nedáváme. tvary = skloňované tvary, podle kterých skript hledá výskyty v článcích.",
   "kategorie": {
     "seo": {"nazev": "SEO", "barva": "#f3794d"},
     "obsah": {"nazev": "Obsah", "barva": "#f96073"},
@@ -59,11 +59,6 @@
      "kw": "přesměrování 301", "kw_dalsi": ["301 redirect", "přesměrování webu"],
      "clanky": ["wordpress-a-webflow-odzvonilo"], "sluzba": "spoluprace",
      "tvary": ["přesměrování 301", "přesměrování"]},
-    {"slug": "seo-copywriting", "pojem": "SEO copywriting", "kategorie": "obsah", "priorita": 1, "stav": "clanek", "url": "../blog/seo-copywriting",
-     "definice": "Psaní textů, které dávají smysl čtenáři a zároveň je najde vyhledávač. Celý postup v článku.",
-     "kw": "seo copywriting", "kw_dalsi": [],
-     "clanky": ["seo-copywriting"], "sluzba": "spoluprace",
-     "tvary": ["SEO copywriting", "SEO copywritingu"]},
     {"slug": "cta", "pojem": "CTA", "plny_nazev": "výzva k akci", "kategorie": "obsah", "priorita": 1, "stav": "hotovo",
      "definice": "Věta nebo tlačítko, které čtenáři řekne, co má udělat dál. Napsat, koupit, přihlásit se.",
      "kw": "cta", "kw_dalsi": ["call to action", "výzva k akci příklady"],
@@ -114,12 +109,6 @@
      "kw": "cms", "kw_dalsi": ["redakční systém", "co je cms"],
      "clanky": ["vse-o-webflow", "wordpress-a-webflow-odzvonilo"], "sluzba": "spoluprace",
      "tvary": ["CMS", "redakční systém", "redakčního systému"]},
-    {"slug": "webflow", "pojem": "Webflow", "kategorie": "web", "priorita": 1, "stav": "clanek", "url": "../blog/vse-o-webflow",
-     "definice": "No-code platforma pro tvorbu webů s vlastním CMS a hostingem. Co umí a kolik stojí, rozebírám v článku.",
-     "kw": "webflow", "kw_dalsi": [],
-     "clanky": ["vse-o-webflow", "wordpress-a-webflow-odzvonilo"], "sluzba": "spoluprace",
-     "tvary": []},
-
     {"slug": "anchor-text", "pojem": "Anchor text", "kategorie": "seo", "priorita": 2, "stav": "navrh",
      "definice": "Viditelný text odkazu. Google z něj čte, o čem je stránka, na kterou odkaz vede.",
      "kw": "anchor text", "kw_dalsi": [], "clanky": ["seo-copywriting"], "sluzba": "spoluprace",
