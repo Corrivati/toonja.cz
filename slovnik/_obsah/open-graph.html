@@ -1,0 +1,52 @@
+<!--
+meta:
+title: Open Graph: co to je a jak nastavit náhled odkazu | Toonja
+description: Open Graph jsou značky v kódu stránky, které určují náhled odkazu na sociálních sítích. Které značky nastavit, jaký obrázek použít a jak náhled otestovat.
+h1: Co je Open Graph
+perex: Proč jeden odkaz na LinkedInu vypadá jako pozvánka a jiný jako holá adresa. Pár řádků v kódu, které rozhodují o prvním dojmu.
+aktualizovano: 2026-10-22
+souvisejici: meta-description, title-tag, alt-text, ctr
+faq:
+- Jaký obrázek použít? | Obdélník na šířku, nejčastěji doporučovaný rozměr je 1200 × 630 px. Důležitý obsah dejte doprostřed, některé sítě okraje ořezávají.
+- Proč se po změně pořád ukazuje starý náhled? | Sítě si náhled ukládají. Na Facebooku pomůže nástroj Sharing Debugger, na LinkedInu Post Inspector. Oba stránku načtou znovu.
+- Ovlivňuje Open Graph SEO? | Přímo ne. Ale lepší náhled znamená víc kliků ze sdílení a víc lidí, kteří se o stránce dozví.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>Open Graph je sada značek v kódu stránky, které určují, jak vypadá náhled odkazu při sdílení.</strong> Nastavují titulek, popis, obrázek a adresu, které ukáže Facebook, LinkedIn nebo chatovací aplikace. Protokol původně vytvořil Facebook a dnes ho čte většina sociálních sítí i aplikací.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">Open Graph jednoduše</h2>
+<p>Když odkaz vložíte do příspěvku, síť si stránku stáhne a hledá, co ukázat. <strong>Open Graph jí to řekne přesně.</strong> Bez něj si síť vybere sama a často sáhne vedle: logo z patičky, první větu z cookie lišty.</p>
+
+<h2 id="znacky">Značky, které potřebujete</h2>
+<ol>
+<li><strong>og:title</strong> titulek náhledu. Může být jiný než <a href="title-tag">title tag</a>, třeba bez názvu značky.</li>
+<li><strong>og:description</strong> krátký popis. Když chybí, sítě často použijí <a href="meta-description">meta description</a>.</li>
+<li><strong>og:image</strong> obrázek náhledu. Má největší vliv na to, jestli lidé kliknou.</li>
+<li><strong>og:url</strong> hlavní adresa stránky.</li>
+<li><strong>og:type</strong> typ obsahu, třeba „article“ u článku.</li>
+</ol>
+<p>Pro X (Twitter) se přidávají obdobné značky twitter:card, twitter:title a další.</p>
+
+<h2 id="priklad">Příklad: články na tomto blogu</h2>
+<p>Každý článek na toonja.cz má vyplněné og:title, og:description, og:image, og:url, og:type i og:locale. Článek WordPress a Webflow odzvonilo má jako og:image vlastní ilustraci s náhrobky obou platforem, takže <strong>při sdílení je na první pohled jasné, o čem je.</strong></p>
+<p>Jak napsat popisek, který funguje ve vyhledávání i při sdílení, popisuju v článku <a href="../blog/jak-psat-meta-description">Jak psát meta description</a>.</p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Obrázek musí mít plnou adresu.</strong> Relativní cesta jako „../obrazek.jpg“ sítím nestačí.</li>
+<li><strong>Každá stránka vlastní náhled.</strong> Stejný obrázek všude znamená, že sdílení vypadají jako jedno a totéž.</li>
+<li><strong>Text v obrázku čitelný i na mobilu.</strong> Náhled bývá malý.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Než článek sdílíte, pošlete si odkaz sami sobě do chatu. Za deset vteřin víte, jestli náhled prodává, nebo se stydí.</p>
+  </div>
+</div>

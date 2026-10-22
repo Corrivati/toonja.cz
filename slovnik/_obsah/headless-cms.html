@@ -1,0 +1,49 @@
+<!--
+meta:
+title: Headless CMS: co to je a kdy ho použít | Toonja
+description: Headless CMS spravuje jen obsah, bez vlastního vzhledu webu. Kdy se hodí ke statickému webu, jak se liší od WordPressu a jaké nástroje existují.
+h1: Co je headless CMS
+perex: Administrace bez webu. Redakce píše v pohodlném editoru, web si obsah vezme a zobrazí po svém. Nejlepší z obou světů pro týmy.
+aktualizovano: 2026-10-22
+souvisejici: cms, staticky-web, git, no-code
+faq:
+- Proč „headless“? | Hlava je ta část systému, která obsah zobrazuje návštěvníkům. Headless CMS ji nemá, stará se jen o obsah. Zobrazení řeší web, aplikace nebo cokoli jiného.
+- Je headless CMS dražší? | Některé jsou zdarma (Decap CMS, TinaCMS v základu), jiné se platí podle počtu uživatelů nebo objemu obsahu. Počítejte i s prací na napojení webu.
+- Potřebuje malý web headless CMS? | Většinou ne. Když web upravuje jeden člověk, stačí statický web v Gitu a AI asistent. Headless CMS dává smysl pro tým, který publikuje často.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>Headless CMS je redakční systém, který jen spravuje obsah a nemá vlastní šablony ani vzhled webu.</strong> Obsah předává webu, aplikaci nebo jinému kanálu, který ho zobrazí po svém. Často se kombinuje se statickým webem: editor dostane pohodlnou administraci a web zůstane rychlý a bezpečný.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">Headless CMS jednoduše</h2>
+<p>Klasický <a href="cms">CMS</a> jako WordPress je restaurace s vlastní kuchyní i jídelnou. <strong>Headless CMS je jen kuchyně.</strong> Jídlo rozváží, kam si řeknete: na web, do mobilní aplikace, do newsletteru.</p>
+
+<h2 id="typy">Dva hlavní typy</h2>
+<ol>
+<li><strong>Git-based.</strong> Obsah ukládá jako soubory přímo do <a href="git">Git</a> repozitáře. Editor kliká v administraci, na pozadí vznikají commity. Příklady: Decap CMS, TinaCMS.</li>
+<li><strong>API-based.</strong> Obsah žije v cloudové databázi poskytovatele a web si ho stahuje přes API. Příklady: Contentful, Sanity, Strapi.</li>
+</ol>
+<p>Pro malé a střední weby bývá Git-based varianta jednodušší. Obsah zůstává v repozitáři, nic se neplatí za databázi a web je pořád <a href="staticky-web">statický</a>.</p>
+
+<h2 id="priklad">Příklad: kdy dává smysl</h2>
+<p>V článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a> doporučuju headless CMS jako řešení pro jeden konkrétní případ: <strong>web, kam denně publikuje redakce nebo netechnický tým.</strong></p>
+<p>Malý web, který upravuje jeden člověk, se bez něj obejde. Zadání napíše AI asistentovi a ten upraví soubory v Gitu. Jakmile ale publikuje pět lidí, kteří nechtějí psát zadání, je editor s náhledem a schvalováním k nezaplacení. Obsah přitom pořád leží v repozitáři, ne v cizím systému.</p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Někdo musí napojit web.</strong> Headless CMS nedodá hotové stránky, jen data.</li>
+<li><strong>Náhled před publikací.</strong> Ne všechny systémy umí ukázat, jak bude obsah na webu vypadat. Pro redakci je to zásadní.</li>
+<li><strong>Vendor lock-in u API systémů.</strong> Ověřte si, jak dostanete obsah ven, než se upíšete.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Headless CMS je dobrá odpověď na otázku „kdo bude web upravovat, když ne já“. Pokud odpověď zní „já“, nepotřebujete ho.</p>
+  </div>
+</div>

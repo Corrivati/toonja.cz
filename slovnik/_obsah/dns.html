@@ -1,0 +1,52 @@
+<!--
+meta:
+title: DNS: co to je a jak nastavit doménu | Toonja
+description: DNS překládá název domény na adresu serveru, kde web běží. Jaké jsou typy DNS záznamů (A, CNAME, MX, TXT), co je TTL a na co myslet při přepnutí domény.
+h1: Co je DNS
+perex: Telefonní seznam internetu. Díky němu stačí napsat toonja.cz a nemusíte si pamatovat čísla serverů.
+aktualizovano: 2026-10-22
+souvisejici: staticky-web, presmerovani-301, git, cms
+faq:
+- Jak dlouho trvá změna DNS? | Záleží na TTL, tedy jak dlouho si servery záznam pamatují. Obvykle minuty až hodiny, výjimečně den. Před plánovanou změnou se vyplatí TTL snížit.
+- Kde se DNS nastavuje? | U správce DNS vaší domény. Většinou u registrátora, kde jste doménu koupili, nebo u služby jako Cloudflare, pokud jste na ni přesunuli nameservery.
+- Co je nameserver? | Server, který o vaší doméně odpovídá na dotazy. Změnou nameserverů přesunete správu všech DNS záznamů jinam.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>DNS (Domain Name System) je systém, který překládá názvy domén na adresy serverů.</strong> Když do prohlížeče napíšete název webu, DNS zjistí, na kterém serveru běží. Pomocí DNS záznamů nastavujete, kam míří web, kam chodí e-maily a jak doménu ověří různé služby.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">DNS jednoduše</h2>
+<p>Lidé si pamatují jména, počítače čísla. <strong>DNS je převodník mezi nimi.</strong> Jako kontakty v telefonu: hledáte „Máma“, telefon vytočí číslo.</p>
+<p>Doména a hosting jsou proto dvě různé věci. Doménu si koupíte u registrátora, web běží na hostingu a DNS je propojí.</p>
+
+<h2 id="zaznamy">Nejčastější DNS záznamy</h2>
+<ul>
+<li><strong>A a AAAA:</strong> doména míří na IP adresu serveru (IPv4 a IPv6).</li>
+<li><strong>CNAME:</strong> doména míří na jinou doménu. Typické pro „www“.</li>
+<li><strong>MX:</strong> kam doručovat e-maily.</li>
+<li><strong>TXT:</strong> textové záznamy pro ověření domény a ochranu e-mailů (SPF, DKIM, DMARC).</li>
+<li><strong>TTL:</strong> není záznam, ale jeho vlastnost. Jak dlouho si ho ostatní servery pamatují.</li>
+</ul>
+
+<h2 id="priklad">Příklad: jak běží toonja.cz</h2>
+<p>Doména toonja.cz je registrovaná u českého registrátora, ale web běží na GitHub Pages. <strong>V repozitáři webu leží soubor CNAME s adresou www.toonja.cz.</strong> Podle něj GitHub ví, na jaké doméně má web obsluhovat. U domény pak DNS záznamy míří na servery GitHubu.</p>
+<p>Při přechodu z Webflow se na straně domény měnilo jen to, kam DNS záznamy míří. Obsah se stěhoval zvlášť, do repozitáře. Postup popisuju v článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a>, v kroku „Přepněte doménu“.</p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Nesmažte MX záznamy.</strong> Při přepínání webu se snadno rozbije e-mail, který na webu vůbec nezávisí.</li>
+<li><strong>Snižte TTL předem.</strong> Den před změnou, aby se nové nastavení rozšířilo rychle.</li>
+<li><strong>Staré adresy přesměrujte.</strong> Nový web na nové platformě často mění URL. Pomůže <a href="presmerovani-301">přesměrování 301</a>.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Než sáhnete do DNS, udělejte si screenshot všech záznamů. Kdyby se něco pokazilo, ušetří vám to celý víkend.</p>
+  </div>
+</div>

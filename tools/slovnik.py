@@ -194,8 +194,7 @@ def build_hub(kat, pojmy, include_draft):
             is_article = p["stav"] == "clanek"
             sub = f'<div class="slovnik-card__sub">{esc(p["plny_nazev"])}</div>' if p.get("plny_nazev") else ""
             more = "Číst článek" if is_article else "Co to je"
-            search = fold(" ".join([p["pojem"], p.get("plny_nazev", ""), p["definice"]] + p.get("kw_dalsi", [])))
-            cards.append(f'''<a class="card slovnik-card" href="{esc(term_href(p))}" data-cat="{p["kategorie"]}" data-search="{esc(search)}">
+            cards.append(f'''<a class="card slovnik-card" href="{esc(term_href(p))}" data-cat="{p["kategorie"]}">
 <div class="slovnik-card__head"><h3 class="slovnik-card__term">{esc(p["pojem"])}</h3><span class="line-rounded-icon link-icon-right">\ue805</span></div>{sub}
 <p class="slovnik-card__def">{esc(p["definice"])}</p>
 <div class="slovnik-card__top">{chip(p["kategorie"], kat)}{'<span class="slovnik-card__flag">Článek na blogu</span>' if is_article else ''}</div>
@@ -205,23 +204,12 @@ def build_hub(kat, pojmy, include_draft):
 <div class="slovnik-list">{"".join(cards)}</div>
 </section>''')
 
-    featured = [p for p in shown if p["slug"] in ("seo", "mcp", "vykonnostni-marketing")]
-    feat_html = "".join(
-        f'<a class="slovnik-start__item" href="{esc(term_href(p))}"><span class="slovnik-start__term">{esc(p["pojem"])}</span>'
-        + (f'<span class="slovnik-start__hint">{esc(kat[p["kategorie"]]["nazev"])}</span>' if kat[p["kategorie"]]["nazev"] != p["pojem"] else '') + '</a>' for p in featured)
-
     body = f'''<div class="top-section pd-top-56px bg-secondary-5 slovnik-hero">
 <div class="container-default position-relative---z-index-1 w-container">
 <nav class="slovnik-breadcrumb" aria-label="Drobečková navigace"><a href="../">Úvod</a><span>/</span><span aria-current="page">Slovník pojmů</span></nav>
 <div class="text-center">
 <div class="inner-container _966px center"><h1 class="display-2 mg-bottom-16px">Slovník pojmů online marketingu</h1></div>
-<div class="inner-container _686px center"><p class="mg-bottom-32px">SEO, PPC, weby i AI bez mlžení. Každý pojem nejdřív jednou větou, pak do hloubky a s příkladem z praxe.</p></div>
-<div class="slovnik-search">
-<span class="slovnik-search__icon" aria-hidden="true"></span>
-<label class="seo-sr-only" for="slovnik-hledat">Hledat pojem</label>
-<input class="input slovnik-search__input" id="slovnik-hledat" type="search" placeholder="Hledat pojem, třeba konverze nebo Git" autocomplete="off"/>
-</div>
-<div class="slovnik-start"><span class="slovnik-start__label">Začněte tady:</span>{feat_html}</div>
+<div class="inner-container _686px center"><p class="mg-bottom-0">SEO, PPC, weby i AI bez mlžení. Každý pojem nejdřív jednou větou, pak do hloubky a s příkladem z praxe.</p></div>
 </div>
 </div>
 {dots()}

@@ -1,0 +1,50 @@
+<!--
+meta:
+title: Sitemap: co je mapa webu a jak ji vytvořit | Toonja
+description: Sitemap je soubor se seznamem stránek webu pro vyhledávače. K čemu je sitemap.xml, co do ní patří a nepatří a jak ji odeslat do Google Search Console.
+h1: Co je sitemap
+perex: Seznam stránek, které chcete mít ve vyhledávači. Robotovi ušetří hledání a vám ukáže, kolik stránek web doopravdy má.
+aktualizovano: 2026-10-22
+souvisejici: seo, interni-prolinkovani, presmerovani-301, staticky-web
+faq:
+- Potřebuje malý web sitemap? | Není povinná, ale nic nestojí a pomůže. Hlavně novým webům a stránkám, na které zatím moc neodkazuje.
+- Kolik adres se vejde do jedné sitemap? | Až 50 000 adres nebo 50 MB. Větší weby používají víc sitemap a jeden souhrnný index.
+- Jak sitemap odeslat? | Uveďte ji v souboru robots.txt a vložte do Google Search Console v sekci Soubory Sitemap. Pro Seznam je obdobná cesta v Seznam Webmaster.
+-->
+
+<div class="slovnik-definice" id="definice">
+  <div class="slovnik-definice__label">Krátká odpověď</div>
+  <p><strong>Sitemap (mapa webu) je soubor, obvykle sitemap.xml, se seznamem adres stránek, které chcete mít ve vyhledávači.</strong> Robotům usnadňuje najít všechny důležité stránky, včetně nových a hůř prolinkovaných. Může obsahovat i datum poslední změny každé stránky, aby vyhledávač věděl, co má znovu projít.</p>
+</div>
+
+<div class="rich-text w-richtext">
+<h2 id="jednoduse">Sitemap jednoduše</h2>
+<p>Robot vyhledávače prochází web po odkazech. <strong>Sitemap mu k tomu dá seznam adres předem,</strong> jako průvodce s mapou místo bloudění po chodbách.</p>
+<p>Sitemap ale nezaručuje, že se stránka zaindexuje. Je to doporučení. O zařazení rozhoduje kvalita stránky a to, jestli na ni vedou odkazy.</p>
+
+<h2 id="co-tam-patri">Co do sitemap patří</h2>
+<ul>
+<li><strong>Ano:</strong> stránky, které mají být ve vyhledávači. Jejich hlavní (kanonická) adresa.</li>
+<li><strong>Ne:</strong> stránky s chybou 404, přesměrované adresy, duplicitní varianty, stránky zakázané pro indexaci, děkovací stránky po formuláři.</li>
+<li><strong>Datum změny</strong> (lastmod) jen pokud je pravdivé. Když ho měníte bez důvodu, vyhledávač mu přestane věřit.</li>
+</ul>
+
+<h2 id="priklad">Příklad: sitemap tohoto webu</h2>
+<p>Při převodu toonja.cz z Webflow měla sitemapa 26 adres, ale <strong>skutečných stránek bylo jen asi 8.</strong> Zbytek tvořily pozůstatky šablony. Inventura sitemap byla první krok celé přestavby, popsaný v článku <a href="../blog/wordpress-a-webflow-odzvonilo">WordPress a Webflow odzvonilo</a>.</p>
+<p>Dnes v ní je jen to, co na webu opravdu existuje. Adresy slovníku do ní přidává skript automaticky při každém sestavení, včetně data poslední úpravy. Na sitemapu odkazuje i soubor robots.txt.</p>
+
+<h2 id="pozor">Na co si dát pozor</h2>
+<ul>
+<li><strong>Sitemap musí sedět s realitou.</strong> Mrtvé a přesměrované adresy v ní vyhledávač zbytečně zdržují.</li>
+<li><strong>Nespoléhejte jen na ni.</strong> Stránka bez <a href="interni-prolinkovani">interních odkazů</a> působí nedůležitě, i když je v sitemap.</li>
+<li><strong>Kontrolujte chyby v Search Console.</strong> Ukáže, které adresy ze sitemap se nezaindexovaly a proč.</li>
+</ul>
+</div>
+
+<div class="slovnik-mara">
+  <img src="../assets/images/foto-toonja.jpg" alt="Marek Turnhöfer" loading="lazy">
+  <div>
+    <div class="slovnik-mara__label">Mára říká</div>
+    <p>Sitemap je nejlevnější audit webu. Projděte ji a zjistíte, kolik stránek máte, o kterých jste ani nevěděli.</p>
+  </div>
+</div>
