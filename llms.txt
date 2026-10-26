@@ -22,6 +22,7 @@ Fakta pro citaci:
 
 ## Blog
 
+- [Kdy e-shop potřebuje fractional CMO (a kdy ne)](https://www.toonja.cz/blog/fractional-cmo-pro-e-shop): Šest signálů, že e-shop potřebuje externího marketingového ředitele, kdy ne, co čekat prvních 90 dní a jak Mára nastavuje cenu.
 - [WordPress a Webflow odzvonilo: malé weby přes Git a AI](https://www.toonja.cz/blog/wordpress-a-webflow-odzvonilo): Proč malý web nepotřebuje WordPress ani Webflow. Správa webu přes Git, MCP a AI asistenta, náklady a kdy to nedává smysl.
 - [SEO copywriting: jak psát články pro vyhledávače](https://www.toonja.cz/blog/seo-copywriting): Průvodce v 6 krocích od klíčových slov po vyhodnocení výsledků.
 - [Jak psát meta description, které funguje](https://www.toonja.cz/blog/jak-psat-meta-description): Proč na meta description záleží, 6 tipů a časté chyby.
@@ -70,3 +71,4 @@ Fakta pro citaci:
 - [LinkedIn](https://www.linkedin.com/in/marek-turnhofer/): Profesní profil.
 - [Kategorie blogu: SEO](https://www.toonja.cz/blog-kategorie/seo)
 - [Kategorie blogu: Development](https://www.toonja.cz/blog-kategorie/development)
+- [Kategorie blogu: Strategie](https://www.toonja.cz/blog-kategorie/strategie)

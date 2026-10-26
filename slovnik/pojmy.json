@@ -87,7 +87,7 @@
     {"slug": "fractional-cmo", "pojem": "Fractional CMO", "kategorie": "strategie", "priorita": 1, "stav": "hotovo",
      "definice": "Marketingový ředitel na částečný úvazek. Firma dostane seniorní vedení marketingu bez nákladů na plný úvazek.",
      "kw": "fractional cmo", "kw_dalsi": ["externí marketingový ředitel", "marketingový ředitel na částečný úvazek"],
-     "clanky": [], "sluzba": "spoluprace",
+     "clanky": ["fractional-cmo-pro-e-shop"], "sluzba": "spoluprace",
      "tvary": ["fractional CMO", "externí marketingový ředitel"]},
     {"slug": "mcp", "pojem": "MCP", "plny_nazev": "Model Context Protocol", "kategorie": "web", "priorita": 1, "stav": "hotovo",
      "definice": "Otevřený standard, přes který se AI asistent jako Claude nebo ChatGPT napojí na vaše nástroje a data.",
