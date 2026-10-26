@@ -4,7 +4,7 @@
 Web zůstává čisté HTML bez buildu na hostingu. Tenhle skript je jen pomocník
 pro úpravy: vygeneruje stránky slovníku do repozitáře a zkontroluje prolinkování.
 
-  python3 tools/slovnik.py build          rozcestník + stránky pojmů + sitemap
+  python3 tools/slovnik.py build          rozcestník + stránky pojmů + sitemap + llms.txt
   python3 tools/slovnik.py build --navrh  i pojmy ve stavu "navrh" (jen pro náhled, necommitovat)
   python3 tools/slovnik.py check          kde v článcích chybí odkaz na pojem ze slovníku
   python3 tools/slovnik.py check --vse    totéž i pro pojmy, které ještě nemají stránku
@@ -384,6 +384,20 @@ def update_sitemap(pojmy):
     f.write_text(s, encoding="utf-8")
 
 
+def update_llms(pojmy):
+    """Přepíše sekci „## Slovník pojmů“ v llms.txt podle hotových pojmů."""
+    f = ROOT / "llms.txt"
+    if not f.exists():
+        return
+    rows = ["## Slovník pojmů", "",
+            f"- [Slovník pojmů online marketingu]({BASE}/slovnik/): Rozcestník všech pojmů od A do Ž."]
+    for p in sorted(pojmy, key=lambda x: sort_key(x["pojem"])):
+        if p["stav"] == "hotovo":
+            rows.append(f'- [{full_label(p)}]({BASE}/slovnik/{p["slug"]}): {p["definice"]}')
+    s = re.sub(r"## Slovník pojmů\n.*?(?=\n## )", "\n".join(rows) + "\n", f.read_text(encoding="utf-8"), flags=re.S)
+    f.write_text(s, encoding="utf-8")
+
+
 # ---------- kontrola článků ----------
 
 def check(include_all):
@@ -447,4 +461,5 @@ if __name__ == "__main__":
             built += 1
     if not INCLUDE_DRAFT:
         update_sitemap(pojmy)
-    print(f"Rozcestník: {len(shown)} pojmů. Stránek pojmů: {built}." + ("" if INCLUDE_DRAFT else " Sitemap aktualizována."))
+        update_llms(pojmy)
+    print(f"Rozcestník: {len(shown)} pojmů. Stránek pojmů: {built}." + ("" if INCLUDE_DRAFT else " Sitemap a llms.txt aktualizovány."))

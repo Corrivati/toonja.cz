@@ -13,6 +13,7 @@ blog/index.html            /blog/
 blog/<slug>.html           /blog/<slug>       (články + newsletter formulář)
 blog-kategorie/<x>.html    /blog-kategorie/<x>
 404.html                   chybová stránka
+llms.txt                   souhrn webu pro AI vyhledávače (sekci slovníku přepisuje build)
 assets/css/                styl z Webflow (beze změn, jen cesty k souborům)
 assets/js/                 jQuery + webflow.js (animace, menu, posuvník) + forms.js
 assets/fonts/, images/     písma a obrázky, nezávislé na Webflow CDN

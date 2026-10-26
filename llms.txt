@@ -1,0 +1,72 @@
+# Marek Turnhöfer (Toonja)
+
+> Osobní web Marka Turnhöfera, online marketingového konzultanta pro e-shopy a startupy. Pomáhá s marketingovou strategií, SEO, PPC reklamou a řízením vývoje webu. Web je v češtině, obsahuje blog s návody a slovník pojmů online marketingu.
+
+Fakta pro citaci:
+
+- Celé jméno: Marek Turnhöfer, přezdívka Mára, značka „Marek Toonja“.
+- Role: online marketingový a e-commerce konzultant, PPC specialista, lektor a mentor. Od roku 2021 na volné noze.
+- Praxe: přes 12 let v marketingu, přes 10 milionů Kč spravovaného marketingového budgetu.
+- Kariéra: 2012 spoluzaložil videoprodukci Noma Art, 2014 až 2016 content a PPC role (Zvěrokruh, SUPER ZOO), od 2018 CMO v Eppi (40% růst značky), od 2021 konzultant na volné noze.
+- Klienti zmínění na webu: Dotidot, Albi, Czechdesign, Papelote.
+- Zaměření: výkonnostní marketing, e-commerce strategie, SEO, PPC (Google Ads, Sklik), tvorba a správa webů včetně statických webů spravovaných přes Git a AI.
+- Jazyk: čeština. Spolupráce je vhodná hlavně pro české e-shopy a startupy.
+- Kontakt: turnhofer.marek@gmail.com, +420 739 498 189, https://www.toonja.cz/contact
+
+## Hlavní stránky
+
+- [Úvod](https://www.toonja.cz/): Kdo je Mára a s čím pomáhá, výběr článků.
+- [Kdo je Mára](https://www.toonja.cz/o-mne): Profesní příběh, čísla, kariéra od roku 2012 a osobní zájmy.
+- [Spolupráce](https://www.toonja.cz/spoluprace): Služby (marketingová strategie, SEO a PPC, projektové řízení webu), reference klientů a průběh spolupráce.
+- [Kontakt](https://www.toonja.cz/contact): Formulář, e-mail, telefon a LinkedIn.
+
+## Blog
+
+- [WordPress a Webflow odzvonilo: malé weby přes Git a AI](https://www.toonja.cz/blog/wordpress-a-webflow-odzvonilo): Proč malý web nepotřebuje WordPress ani Webflow. Správa webu přes Git, MCP a AI asistenta, náklady a kdy to nedává smysl.
+- [SEO copywriting: jak psát články pro vyhledávače](https://www.toonja.cz/blog/seo-copywriting): Průvodce v 6 krocích od klíčových slov po vyhodnocení výsledků.
+- [Jak psát meta description, které funguje](https://www.toonja.cz/blog/jak-psat-meta-description): Proč na meta description záleží, 6 tipů a časté chyby.
+- [Co je Webflow a jak si v něm vytvořit web](https://www.toonja.cz/blog/vse-o-webflow): Jak Webflow funguje, kolik stojí a jak si vede proti WordPressu.
+
+## Slovník pojmů
+
+- [Slovník pojmů online marketingu](https://www.toonja.cz/slovnik/): Rozcestník všech pojmů od A do Ž.
+- [Alt text](https://www.toonja.cz/slovnik/alt-text): Textový popis obrázku pro vyhledávače a čtečky obrazovky.
+- [Anchor text](https://www.toonja.cz/slovnik/anchor-text): Viditelný text odkazu. Google z něj čte, o čem je stránka, na kterou odkaz vede.
+- [CMS (redakční systém)](https://www.toonja.cz/slovnik/cms): Systém pro správu obsahu webu bez sahání do kódu. Třeba WordPress nebo Webflow.
+- [Content marketing](https://www.toonja.cz/slovnik/content-marketing): Získávání zákazníků užitečným obsahem místo přímé reklamy.
+- [CTA (výzva k akci)](https://www.toonja.cz/slovnik/cta): Věta nebo tlačítko, které čtenáři řekne, co má udělat dál. Napsat, koupit, přihlásit se.
+- [CTR (míra prokliku)](https://www.toonja.cz/slovnik/ctr): Kolik procent lidí, kteří odkaz nebo reklamu viděli, na ni opravdu kliklo.
+- [DNS](https://www.toonja.cz/slovnik/dns): Adresář internetu. Překládá název domény na adresu serveru, kde web běží.
+- [Fractional CMO](https://www.toonja.cz/slovnik/fractional-cmo): Marketingový ředitel na částečný úvazek. Firma dostane seniorní vedení marketingu bez nákladů na plný úvazek.
+- [Git](https://www.toonja.cz/slovnik/git): Systém, který si pamatuje každou změnu v souborech projektu. Kdo, co, kdy, a jak se k tomu vrátit.
+- [Growth hacking](https://www.toonja.cz/slovnik/growth-hacking): Rychlé a levné experimenty napříč produktem a marketingem s cílem najít, co táhne růst.
+- [Headless CMS](https://www.toonja.cz/slovnik/headless-cms): Redakční systém bez vlastního vzhledu. Obsah spravuje editor, web ho jen zobrazí.
+- [Interní prolinkování](https://www.toonja.cz/slovnik/interni-prolinkovani): Odkazy mezi stránkami vlastního webu. Čtenáři pomáhají najít další obsah, Googlu ukazují, co k čemu patří.
+- [Kanibalizace klíčových slov](https://www.toonja.cz/slovnik/kanibalizace-klicovych-slov): Dvě stránky jednoho webu se přetahují o stejný dotaz a obě kvůli tomu rankují hůř.
+- [Klíčové slovo](https://www.toonja.cz/slovnik/klicove-slovo): Výraz, který lidé píšou do vyhledávače a pro který chcete, aby našli právě vaši stránku.
+- [Konverze](https://www.toonja.cz/slovnik/konverze): Akce, kterou od návštěvníka chcete: nákup, poptávka, registrace nebo odběr newsletteru.
+- [Lead](https://www.toonja.cz/slovnik/lead): Kontakt na potenciálního zákazníka, který projevil zájem.
+- [Long tail](https://www.toonja.cz/slovnik/long-tail): Delší a konkrétnější dotazy. Hledá je méně lidí, ale ti, co je hledají, většinou vědí přesně, co chtějí.
+- [MCP (Model Context Protocol)](https://www.toonja.cz/slovnik/mcp): Otevřený standard, přes který se AI asistent jako Claude nebo ChatGPT napojí na vaše nástroje a data.
+- [Meta description](https://www.toonja.cz/slovnik/meta-description): Krátký popis stránky pod titulkem ve výsledcích vyhledávání. O pozici nerozhoduje, o prokliku ano.
+- [No-code](https://www.toonja.cz/slovnik/no-code): Tvorba webů a aplikací ve vizuálním editoru, bez psaní kódu.
+- [Open Graph](https://www.toonja.cz/slovnik/open-graph): Značky v kódu stránky, které určují, jak vypadá odkaz po sdílení na sociálních sítích.
+- [PPC reklama (Pay Per Click)](https://www.toonja.cz/slovnik/ppc): Reklama, za kterou platíte, až když na ni někdo klikne. Typicky Google Ads nebo Sklik.
+- [Produktový feed](https://www.toonja.cz/slovnik/produktovy-feed): Soubor s daty o produktech e-shopu, ze kterého vznikají nákupní kampaně a výpisy ve srovnávačích.
+- [Přesměrování 301](https://www.toonja.cz/slovnik/presmerovani-301): Trvalé přesměrování staré adresy na novou. Při stěhování webu díky němu nepřijdete o pozice ve vyhledávání.
+- [ROAS](https://www.toonja.cz/slovnik/roas): Kolik tržby přinese každá koruna vložená do reklamy.
+- [Search intent (záměr hledání)](https://www.toonja.cz/slovnik/search-intent): Co člověk zadáním dotazu doopravdy chce: dozvědět se něco, porovnat možnosti, nebo rovnou nakoupit.
+- [SEO (Search Engine Optimization)](https://www.toonja.cz/slovnik/seo): Optimalizace pro vyhledávače. Všechno, co děláte proto, aby vás lidé našli v neplacených výsledcích Googlu.
+- [SERP (Search Engine Results Page)](https://www.toonja.cz/slovnik/serp): Stránka s výsledky vyhledávání. Všechno, co Google ukáže po zadání dotazu: odkazy, reklamy, mapy i odpovědi AI.
+- [Sitemap](https://www.toonja.cz/slovnik/sitemap): Soubor se seznamem stránek webu, podle kterého se vyhledávače orientují.
+- [Statický web](https://www.toonja.cz/slovnik/staticky-web): Web z hotových HTML souborů, bez databáze a administrace. Rychlý, levný na provoz a těžko napadnutelný.
+- [Title tag (meta title)](https://www.toonja.cz/slovnik/title-tag): Titulek stránky. Ukáže se jako klikací nadpis ve výsledcích vyhledávání a v záložce prohlížeče.
+- [Výkonnostní marketing (performance marketing)](https://www.toonja.cz/slovnik/vykonnostni-marketing): Marketing, který se měří konkrétním výsledkem: objednávkou, poptávkou nebo tržbou, ne počtem zobrazení.
+- [Zpětný odkaz (backlink)](https://www.toonja.cz/slovnik/zpetny-odkaz): Odkaz z cizího webu na ten váš. Pro Google funguje jako doporučení: čím důvěryhodnější web, tím větší váha.
+
+## Optional
+
+- [Mapa webu](https://www.toonja.cz/sitemap.xml): Úplný seznam stránek.
+- [LinkedIn](https://www.linkedin.com/in/marek-turnhofer/): Profesní profil.
+- [Kategorie blogu: SEO](https://www.toonja.cz/blog-kategorie/seo)
+- [Kategorie blogu: Development](https://www.toonja.cz/blog-kategorie/development)
