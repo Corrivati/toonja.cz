@@ -32,7 +32,15 @@ Před odevzdáním každého článku:
 4. Obráceně: u pojmů, které článek rozebírá do hloubky, přidej článek do pole `clanky` v `pojmy.json`, ať na něj stránka pojmu odkazuje.
 5. Klíčová slova článku nesmí kanibalizovat pojem: slovník cílí na „co je X“, článek na „jak X“ a návody. Pojem, na který míří článek blogu (SEO copywriting, Webflow), do slovníku nedáváme vůbec.
 
+## llms.txt (souhrn webu pro AI vyhledávání)
+`llms.txt` v kořeni webu je souhrn pro AI asistenty. Při větším zásahu do obsahu ho aktualizuj ve stejném commitu:
+- nový, smazaný nebo přejmenovaný článek či stránka: odkaz a jednovětý popis v příslušné sekci,
+- změna služeb, kariéry, čísel (roky praxe, budget), klientů nebo kontaktu: sekce „Fakta pro citaci“ (jen fakta, která jsou na webu),
+- změna titulku nebo zaměření stránky: popis odkazu.
+Sekci „Slovník pojmů“ přepisuje `tools/slovnik.py build`, ručně ji neupravuj. Drobné opravy textu (překlep, formulace) aktualizaci nevyžadují.
+
 ## Před publikací
 - Náhled: `python3 serve.py`, zkontrolovat desktop i mobil.
 - `sitemap.xml`: nová stránka tam musí být (slovník řeší build).
+- `llms.txt`: nová stránka nebo článek tam musí být (slovník řeší build).
 - Publikuje se z větve `claude/jolly-lovelace-gtqqia`. Návrhy dělej v samostatné větvi.
