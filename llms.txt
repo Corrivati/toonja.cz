@@ -17,7 +17,7 @@ Fakta pro citaci:
 
 - [Úvod](https://www.toonja.cz/): Kdo je Mára, jak se s AI změnil marketing a s čím pomáhá: fractional CMO, jednotlivé služby a mentoring. Výběr článků.
 - [Kdo je Mára](https://www.toonja.cz/o-mne): Profesní příběh, čísla, kariéra od roku 2012 a osobní zájmy.
-- [Spolupráce](https://www.toonja.cz/spoluprace): Služby (marketingová strategie, SEO a PPC, projektové řízení webu), reference klientů a průběh spolupráce.
+- [Spolupráce](https://www.toonja.cz/spoluprace): Tři cesty spolupráce podrobně (fractional CMO s pevným měsíčním stropem hodin, jednotlivé služby jako audit, PPC, SEO, měření a web, mentoring 1:1), rozcestník, reference klientů a průběh spolupráce.
 - [Kontakt](https://www.toonja.cz/contact): Formulář, e-mail, telefon a LinkedIn.
 
 ## Blog

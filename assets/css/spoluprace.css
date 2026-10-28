@@ -1,0 +1,43 @@
+/* Prvky stránky Spolupráce, které nejsou v šabloně Webflow. Načítá se jen na /spoluprace, za stylem Webflow. */
+
+.sp-hero-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px}
+
+/* Tři cesty: velké karty, vlevo popis, vpravo co dostanete */
+.sp-services{display:flex;flex-direction:column;gap:40px}
+.sp-service{display:flex;flex-wrap:wrap;gap:40px 56px;padding:48px;scroll-margin-top:24px}
+.sp-service.featured{position:relative;border:2px solid var(--neutral--800);box-shadow:0 10px 30px #14142b14}
+.sp-service-badge{position:absolute;top:-15px;left:48px;white-space:nowrap;padding:5px 16px;border-radius:999px;background:var(--neutral--800);color:var(--neutral--100);font-size:14px;font-weight:700;line-height:1.4}
+.sp-service-intro{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.sp-service-intro img{width:84px;height:84px;object-fit:contain}
+.sp-service-intro h2,.sp-service-intro p{margin-bottom:0}
+.sp-service-detail{flex:1.2 1 400px;min-width:0}
+.sp-scope{padding:6px 14px;border-radius:999px;background:var(--secondary--color-5);border:1px solid #e6eef8;font-size:15px;font-weight:700;color:var(--neutral--800);line-height:1.4}
+
+.sp-checklist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.sp-checklist li{position:relative;padding-left:34px}
+.sp-checklist li::before{content:"";position:absolute;left:0;top:4px;width:22px;height:22px;background:no-repeat center/22px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23121212' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E")}
+.sp-checklist strong{color:var(--neutral--800)}
+
+.sp-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.sp-tile{border:1px solid var(--neutral--300);border-radius:16px;padding:16px 18px;line-height:1.4}
+.sp-tile strong{display:block;color:var(--neutral--800)}
+.sp-tile span{font-size:15px}
+
+/* Rozcestník */
+.sp-picker{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:flex-start;padding:36px 40px;border-radius:24px;background:var(--secondary--color-5)}
+.sp-picker h2{flex:1 1 220px;margin-bottom:0;font-size:26px;line-height:1.25}
+.sp-picker-grid{flex:3 1 600px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;line-height:1.4}
+.sp-picker-grid span{display:block;font-size:15px}
+.sp-picker-grid a{font-weight:700;color:var(--neutral--800);text-decoration:none}
+
+/* Tři kroky místo posuvníku */
+.sp-step{overflow:hidden;display:flex;flex-direction:column}
+.sp-step img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.sp-step-text{padding:28px 32px 32px}
+.sp-step-text h3{font-size:22px;margin-bottom:10px}
+
+@media screen and (max-width:767px){
+  .sp-service{padding:40px 24px 32px}
+  .sp-service-badge{left:24px}
+  .sp-picker{padding:28px 24px}
+}
